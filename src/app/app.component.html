@@ -1,0 +1,39 @@
+<h1 style ="margin-left:75px ;"><u>INVENTORY SYSTEM</u></h1>
+<br>
+<label>
+Item1 :-</label>
+<input type="text"  [(ngModel)]="Item1">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>
+Price :-</label>
+<input type="text"  [(ngModel)]="Price1">
+<br>
+<br>
+<label>
+    Item2 :-</label>
+<input type="text"  [(ngModel)]="Item2">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>
+    Price :-</label>
+<input type="text"  [(ngModel)]="Price2">
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button (click)="Invoice()" *ngIf="Invoice" class="btn btn-success">Generate Invoice</button>
+<div class="panel panel-default">
+    <div class="panel-body">
+    <p >{{I1}}<br>{{I2}}<br>{{Am}}</p>
+</div>
+</div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button (click)="CheckOut()" *ngIf="Checkout" class="btn btn-success">CheckOut</button>
+
+<div *ngIf="C1">
+    <div class="panel panel-default">
+        <div class="panel-body">
+<p >{{I1}} &nbsp; &nbsp; &nbsp;&nbsp;{{P1}}<br>{{I2}}  &nbsp; &nbsp; &nbsp;&nbsp;{{P2}}<br> {{Amt}}</p>
+</div>
+    </div>
+</div>
